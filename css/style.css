@@ -1,0 +1,437 @@
+/* 
+    ImgBB All Images Link
+
+https://i.ibb.co/QQ5XCbX/hero-img.jpg
+https://i.ibb.co/yd90fSN/video-bg.jpg
+https://i.ibb.co/jTcqpxF/header-logo.png
+https://i.ibb.co/wSXyJRw/service-patern.png
+
+
+*/
+
+/* All Common CSS Start */
+*{
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* All Common CSS End */
+
+
+
+/* Header Section Start */
+.header-sec{
+    background-color:   #e7e6e6;
+}
+.container{
+    max-width: 1470px;
+}
+
+
+.navbar-brand img{
+    width: 100px;
+}
+
+ul.header-menu{
+    list-style: none;
+    padding: 0;
+    margin-right: 70px;
+}
+ul.header-menu li{}
+ul.header-menu li a{
+    display:inline-block;
+    padding: 30px 22px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #5f575e;
+    margin: 0px 7px;
+
+    position: relative;
+}
+ul.header-menu li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #7768eb;
+    transition: all .4s ease-in;
+}
+ul.header-menu li a.active{
+    color: #7768eb;
+}
+ul.header-menu li a.active::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #7768eb;
+}
+ul.header-menu li a:hover::after{
+    width: 100%;
+}
+
+/* DropDown Menu Start */
+ul.header-menu li{
+    position: relative;
+}
+ul.header-menu li ul{
+    list-style: none;
+    padding:  0;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 260px;
+    background-color: #fff;
+    padding: 18px;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: top center;
+    transition: all .3s ease-in-out;
+}
+ul.header-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+
+}
+
+ul.header-menu li ul li{}
+ul.header-menu li ul li a{
+    display: block;
+    background-color: #0402ff;
+    padding: 25px 10px;
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+}
+/* DropDown Menu End */
+
+
+
+.header-btn{
+    width: 170px;
+    text-align: right;
+}
+.header-btn .btn-primary{
+    background-color: #fff !important;
+    border-color: #fff;
+    color: #7768eb;
+    font-weight: 600;
+    border: 0px;
+    padding: 14px 35px;
+    overflow: hidden;
+    transition: .3s all ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+.header-btn .btn-primary:hover{
+    color: #fff;
+}
+.header-btn .btn-primary::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #7869f8;
+    transition: all .3s ease-in-out;
+
+}
+.header-btn .btn-primary:hover::before{
+    width: 100%;
+    z-index: -1;
+}
+
+/* Header Section End */
+
+
+/* Hero Banner Section Start */
+.hero-banner-sec{
+    background-color: #edf6ff;
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+}
+.hero-text h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.hero-text p{
+    font-size: 19px;
+}
+.hero-text a{
+    padding: 15px 25px;
+    font-size: 15px;
+    display: inline-block;
+}
+.hero-img{
+    position: absolute;
+    right: -291px;
+    top: -138px;
+}
+.hero-img img{
+    height: 970px;
+}
+.hero-btn .btn-primary:hover{
+    background-color: #fff;
+    color: #7768eb;
+}
+/* Hero Banner Section End */
+
+
+/* Service Section Stazrt */
+.service-sec {
+    padding-bottom: 100px !important;
+    padding-top: 50px !important;
+}
+
+.service-heading h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #9d8fec;
+}
+.service-heading h1{
+    font-size: 43px;
+    font-weight: 600;
+    position: relative;
+}
+.service-heading h1::after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 6px;
+    height: 3px;
+    width: 50px;
+    background: #5252f0;
+}
+.service-heading p{}
+
+
+.service-sec .card-body {
+    background-color: #f9fcff;
+    margin-top: 30px;
+    transform: scaleY(.99);
+    transition: all .3s ease-in-out;
+}
+.s-item{
+    padding: 10px;
+    transition: all .4s ease-in-out;
+}
+
+
+
+.s-item h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.s-item span{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: #5252f0;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+    margin-bottom: 60px !important;
+    border-radius: 100px 100px 100px 0;
+    font-weight: 300;
+    position: relative;
+}
+.s-item span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    height: 3px;
+    width: 50%;
+    background-color: #0402ff;
+    transition: all .3s ease-in-out;
+}
+
+.service-sec .card-body:hover{
+    background-color: #3e41ee;
+    color: #fff;
+    transform: scaleY(1);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.30) !important;
+}
+.service-sec .card-body:hover .s-item span{
+    background-color: #fff;
+    color: #3e41ee;
+}
+.service-sec .card-body:hover .s-item span::after{
+    background-color: #fff;
+    width: 90%;
+}
+.s-item p{}
+
+.service-pattern {
+    bottom: 43px;
+    left: 171px;
+    z-index: -1;
+}
+
+
+/* Service Section End */
+
+
+/* Play Video Section Start */
+.play-video-sec{
+    padding: 112px 0;
+    padding-bottom: 450px;
+    background: url("https://i.ibb.co/yd90fSN/video-bg.jpg") no-repeat top center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.play-video-sec::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 58, 87, 0.77);
+    z-index: -1;
+}
+
+.play-vid-content{}
+.play-vid-content h2{
+    font-size: 20px;
+}
+.play-vid-content h1{
+    font-size: 36px;
+    margin: 25px;
+    position: relative;
+}
+.play-vid-content h1::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: -31px;
+    right: 0px;
+    margin: auto;
+    height: 3px;
+    width: 18%;
+    background: #fff;
+}
+.play-vid-content p{
+    font-size: 20px;
+    width: 75%;
+    margin: 40px auto;
+}
+.play-btn-icon{}
+.play-btn-icon span{
+    background: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+    color: #3763eb;
+    margin-top: 45px;
+    position: relative;
+}
+.play-btn-icon span::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: playAnim 2s ease-in-out infinite;
+}
+.play-btn-icon span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: playAnim2 2s ease-in-out infinite;
+}
+
+
+@keyframes playAnim {
+    0%{
+        border: 1px solid #ddd;
+        opacity: .7;
+        scale: 1;
+    }
+    /* 25%{
+        border: .5px solid #fff;
+        scale: 1.2;
+    } */
+    50%{
+        border: 1px solid #ddd;
+        opacity: 1;
+        scale: 1.3;
+    }
+    /* 75%{
+        border: .5px solid #fff;
+        scale: 1.6;
+    } */
+    100%{
+        border: 1px solid #ddd;
+        opacity: .9;
+        scale: 1.6;
+    }
+    
+}
+
+@keyframes playAnim2 {
+    0%{
+        border: 1px solid #ddd;
+        opacity: .7;
+        scale: 1.2;
+    }
+    /* 25%{
+        border: .5px solid #737c90;
+        scale: 1.4;
+    } */
+    50%{
+        border: 1px solid #ddd;
+        opacity: 1;
+        scale: 1.5;
+    }
+    /* 75%{
+        border: .5px solid #fff;
+        scale: 1.8;
+    } */
+    100%{
+        border: 1px solid #ddd;
+        opacity: .9;
+        scale: 1.8  ;
+    }
+    
+}
+
+
+
+/* Play Video Section End */
+
+
+
+
+
+
